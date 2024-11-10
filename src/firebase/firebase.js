@@ -3,9 +3,10 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from "firebase/firestore";
 import {getStorage} from "firebase/storage";
 
+const API_KEY = process.env.PUBLIC_API_KEY; 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDXFzhDC9Hbv5WmEiITIHFl2OHlXyAgkeA",
+  apiKey: API_KEY,
   authDomain: "mini-social-873e5.firebaseapp.com",
   projectId: "mini-social-873e5",
   storageBucket: "mini-social-873e5.firebasestorage.app",
